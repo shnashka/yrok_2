@@ -21,7 +21,9 @@ violator_songs_list = [
 # Лучше заранее вычислить необходимое, а затем в print(xxx, yyy, zzz)
 
 # TODO здесь ваш код
+time = violator_songs_list[3][1] + violator_songs_list[5][1] + violator_songs_list[-1][1]
 
+print( 'звучат {} минут'.format(time))
 # Есть словарь песен группы Depeche Mode
 violator_songs_dict = {
     'World in My Eyes': 4.76,
@@ -39,3 +41,5 @@ violator_songs_dict = {
 #   А другие три песни звучат ХХХ минут
 
 # TODO здесь ваш код
+time2 = violator_songs_dict['Sweetest Perfection'] + violator_songs_dict['Policy of Truth'] + violator_songs_dict['Blue Dress']
+print( ' эти {} минут'.format(time2))

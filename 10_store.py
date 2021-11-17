@@ -50,7 +50,18 @@ print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, '�
 # Это задание на ручное вычисление - что бы потом понять как работают циклы и насколько с ними проще жить.
 
 # TODO здесь ваш код
+stol_quantity = store[goods['Стол']][0]['quantity'] + store[goods['Стол']][1]['quantity']
+stol_cost = store[goods['Стол']][0]['quantity'] * store[goods['Стол']][0]['price'] + store[goods['Стол']][1]['quantity'] * store[goods['Стол']][1]['price']
 
+divan_quantity = store[goods['Диван']][0]['quantity'] + store[goods['Диван']][1]['quantity']
+divan_cost = store[goods['Диван']][0]['quantity'] * store[goods['Диван']][0]['price'] + store[goods['Диван']][1]['quantity'] * store[goods['Диван']][1]['price']
+
+ctyl_quantity = store[goods['Стул']][0]['quantity'] + store[goods['Стул']][1]['quantity'] + store[goods['Стул']][2]['quantity']
+ctyl_cost = store[goods['Стул']][0]['quantity'] * store[goods['Стул']][0]['price'] + store[goods['Стул']][1]['quantity'] * store[goods['Стул']][1]['price'] + store[goods['Стул']][2]['quantity'] * store[goods['Стул']][2]['price']
+
+print('Стол ', stol_quantity, 'ш стоим', stol_cost, 'р')
+print('Диван-', divan_quantity, 'ш, стоит', divan_cost, 'р')
+print('Стул -', ctyl_quantity, 'ш ст', ctyl_cost, 'р')
 ##########################################################################################
 # ВНИМАНИЕ! После того как __ВСЯ__ домашняя работа сделана и запушена на сервер,         #
 # нужно зайти в ЛМС (LMS - Learning Management System ) по адресу http://go.skillbox.ru  #
